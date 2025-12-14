@@ -1,1 +1,5 @@
 matplotlib
+seaborn 
+pickle 
+pandas 
+numpy
