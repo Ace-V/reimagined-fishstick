@@ -7,7 +7,7 @@ import shap
 import numpy as np
 
 # Load models
-model_file = "../model/water_safety_models.pkl"  
+model_file = "./model/water_safety_models.pkl"  
 
 with open(model_file, "rb") as f:
     models_dict = pickle.load(f)
@@ -316,4 +316,5 @@ if len(category_data) > 0:
     with st.expander("📊 See detailed statistics"):
         st.dataframe(category_data.describe())
 else:
+
     st.info(f"No data available for {selected_category} category")
