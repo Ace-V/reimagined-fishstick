@@ -7,13 +7,13 @@ import shap
 import numpy as np
 
 # Load models
-model_file = "./model/water_safety_models.pkl"  
+model_file = "model/water_safety_models.pkl"  
 
 with open(model_file, "rb") as f:
     models_dict = pickle.load(f)
 
 # Load dataset
-csv_file = "./data/Water_data.csv" 
+csv_file = "data/Water_data.csv" 
 df = pd.read_csv(csv_file)
 
 # Get available categories
@@ -318,4 +318,5 @@ if len(category_data) > 0:
 else:
 
     st.info(f"No data available for {selected_category} category")
+
 
