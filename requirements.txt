@@ -1,6 +1,9 @@
-matplotlib
-seaborn 
-scikit-learn
-pandas 
+streamlit
+pandas
 numpy
+scikit-learn
+matplotlib
+seaborn
 shap
+pinecone-client
+requests
